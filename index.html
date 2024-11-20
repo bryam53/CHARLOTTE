@@ -1,0 +1,525 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Inicio | CHARLOTTE</title>
+      <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    
+      <!-- AOS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+      <!-- Line Awesome -->
+      <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+      <!-- Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/app.css">
+  
+  
+      <style>
+          /* CSS adicional para centrar el h1 */
+          .hero-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh; /* Ocupa toda la altura de la ventana */
+              position: relative;
+              text-align: center;
+              color: white; /* Asegura que el texto sea visible sobre el video */
+          }
+  
+          .hero-container h1 {
+              z-index: 1; /* Asegura que el h1 esté por encima del video */
+              font-size: 3rem; /* Ajusta el tamaño del texto según sea necesario */
+              color: blueviolet;
+          }
+  
+          .hero-container video {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; /* Asegura que el video cubra toda el área */
+              z-index: 0; /* Coloca el video detrás del texto */
+          }
+      </style>
+  </head>
+  <body class="body">
+      <!-- Navbar -->
+      <header>
+          <div class="navbar">
+              <div class="container">
+                  <a href="#" class="brand">Charlotte</a>
+                  <ul class="nav-links">
+                      <li class="active"><a href="#">Inicio</a></li>
+                      <li><a href="#services">acerca de </a></li>
+                      <li><a href="#work">productos</a></li>
+                      <li><a href="#blog">Destacados</a></li>
+                      <li><a href="#contact">Contacto</a></li>
+
+                  </ul>
+                  <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Hero -->
+          <div class="hero-container">
+              <h1 class="heading-xl"><span id="hero-titles">Descansa con Charlotte</span></h1>
+              <video class="hero" autoplay muted loop id="hero-video">
+                  <source src="images/hero-1.mp4" type="video/mp4">
+              </video>
+          </div>
+      </header>
+  </body>
+  </html>
+  
+  <!-- Sección About -->
+  <section class="about py-5" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Imagen -->
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1500">
+                <div class="about-image-container">
+                    <img src="images/persona1.jpg" alt="Descripción de la imagen" class="img-fluid about-image">
+                </div>
+            </div>
+            <!-- Texto -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <div class="about-text">
+                    <h2 class="about-title">Descubre <span>Charlotte</span></h2>
+                    <h4 class="about-subtitle">Innovación en <span>Descanso</span></h4>
+                    <p class="about-description">Charlotte es la solución perfecta para mejorar tu sueño y bienestar. Aprovecha nuestra tecnología de vanguardia para una experiencia de descanso inigualable.</p>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+
+
+  <section class="emotional-health-section">
+    <div class="content">
+        <div class="images">
+            <div class="image-box">
+              <img src="images/concentracion.jpg" alt="Concentración" style="width: 120%; height: 172px; auto;200">
+
+                <p>CONCENTRACIÓN</p>
+            </div>
+            <div class="image-box">
+                <img src="images/estres1.jpg" alt="Estrés">
+                <p>ESTRÉS</p>
+            </div>
+            <div class="image-box">
+                <img src="images/ansiedad.jpg" alt="Ansiedad">
+                <p>ANSIEDAD</p>
+            </div>
+            <div class="image-box">
+                <img src="images/motivacion.jpg" alt="Motivación">
+                <p>MOTIVACIÓN</p>
+            </div>
+            <div class="image-box">
+                <img src="images/conciencia.jpg" alt="Conciencia Plena">
+                <p>CONCIENCIA PLENA</p>
+            </div>
+            <div class="image-box">
+                <img src="images/compasion.jpg" alt="Compasión">
+                <p>COMPASIÓN</p>
+            </div>
+        </div>
+        <div class="text-content">
+          <h2><i class="bi bi-search"></i>
+            COMIENZA TU CAMINO HACIA LA PAZ INTERIOR</h2>
+            <h1>Cuida tu salud emocional y desarrolla la resiliencia</h1>
+            <p>Encuentra el equilibrio que buscas con RelaxMoment. Aprende a gestionar tus emociones en los desafíos del día a día con meditaciones cortas y material adaptado para ti, sea cual sea tu nivel.</p>
+            <div class="icons">
+                <div><span class="icon">⬤</span> INSOMNIO</div>
+                <div><span class="icon">△</span> ESTRÉS</div>
+                <div><span class="icon">⬟</span> ANSIEDAD</div>
+            </div>
+            <p>Descubre nuestros programas para conciliar el sueño, reducir la ansiedad, eliminar el estrés y cultivar el amor propio.</p>
+        </div>
+    </div>
+</section>  
+  <html>
+    <body>
+  
+      <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Nuestros Productos</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="card product-card color-1">
+                        <img src="images/producto 1.jpg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Estrella Mágica</h5>
+                            <p class="card-text">"Ilumina la noche con una luz suave y tranquilizadora."</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card product-card color-2">
+                        <img src="images/producto 2.jpg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Pingüi</h5>
+                            <p class="card-text">"Suave y adorable, ofrece una luz cálida que calma y relaja."</p>
+                        
+                        </div>
+                    </div>
+              </div>
+                <!-- Producto 3 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card product-card color-3">
+                        <img src="images/producto 3.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Luna de Corderitos</h5>
+                            <p class="card-text">"Luna y oveja crean una proyección calmante para noches serenas."</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card product-card color-4">
+                        <img src="images/producto 4.jpg" class="card-img-top" alt="Producto 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Dino Dream</h5>
+                            <p class="card-text">"Luz suave con diseño de dinosaurio para una noche divertida y tranquila."</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card product-card color-1">
+                        <img src="images/producto 5.jpg" class="card-img-top" alt="Producto 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Sabor Nocturno</h5>
+                            <p class="card-text">"Con forma de hamburguesa, ilumina con calidez para noches acogedoras."</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card product-card color-2">
+                        <img src="images/producto 6.jpeg " class="card-img-top" alt="Producto 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Luna Serena</h5>
+                            <p class="card-text">"Luz de luna que calma y ofrece un sueño profundo y reparador."</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials-section py-5">
+      <div class="container">
+        <h2 class="section-title">Testimonios</h2>
+        <div class="row">
+          <!-- Testimonio 1 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="card testimonial-card">
+              <img src="images/persona 1.jpg" class="card-img-top" alt="Testimonio 1">
+              <div class="card-body">
+                <h5 class="card-title">Ricardo Ruiz (Ingeniero)</h5>
+                <p class="card-text">"Este objeto es ideal para relajarse antes de dormir y mejorar la calidad del sueño."</p>
+                <div class="testimonial-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9734;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonio 2 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card testimonial-card">
+              <img src="images/persona 2.jpg" class="card-img-top" alt="Testimonio 2">
+              <div class="card-body">
+                <h5 class="card-title">María López (Estudiante)</h5>
+                <p class="card-text">"Este dispositivo ayuda a calmar la mente y facilita una noche de sueño reparador."</p>
+                <div class="testimonial-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonio 3 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card testimonial-card">
+              <img src="images/persona 3.jpg" class="card-img-top" alt="Testimonio 3">
+              <div class="card-body">
+                <h5 class="card-title">Miguel Fernández (Maestro)</h5>
+                <p class="card-text">"Este artículo contribuye a la relajación y asegura un sueño más tranquilo y reparador."</p>
+                <div class="testimonial-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonio 4 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="card testimonial-card">
+              <img src="images/persona 4.jpg" class="card-img-top" alt="Testimonio 4">
+              <div class="card-body">
+                <h5 class="card-title">Juan Martínez (Estudiante)</h5>
+                <p class="card-text">"Muy útil para combatir el insomnio. La calidad del sueño ha mejorado significativamente."</p>
+                <div class="testimonial-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9734;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonio 5 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card testimonial-card">
+              <img src="images/persona 5.jpg" class="card-img-top" alt="Testimonio 5">
+              <div class="card-body">
+                <h5 class="card-title">Mariana González (Psicóloga)</h5>
+                <p class="card-text">"Este producto ayuda a calmar la mente y facilita un descanso profundo y reparador."</p>
+                <div class="testimonial-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonio 6 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card testimonial-card">
+              <img src="images/persona 6.jpg" class="card-img-top" alt="Testimonio 6">
+              <div class="card-body">
+                <h5 class="card-title">Laura Martínez (Médico)</h5>
+                <p class="card-text">"El peluche es perfecto para relajarse y facilitar un sueño profundo después del trabajo."
+                </p>
+                <div class="testimonial-rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <section id="faq" class="faq-section py-5">
+      <div class="container">
+        <h2 class="section-title"><i class="bi bi-question-circle"></i>
+          Preguntas Frecuentes</h2>
+        <div class="accordion" id="faqAccordion">
+        
+          <!-- Pregunta 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="bi bi-question-circle"></i>
+                ¿Cómo puedo hacer un seguimiento de mi pedido?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <i class="bi bi-r-circle"></i>
+                Puedes rastrear tu pedido a través del enlace de seguimiento que te enviamos por correo electrónico una vez que el pedido ha sido enviado. También puedes iniciar sesión en tu cuenta y verificar el estado del pedido en la sección de "Mis Pedidos".
+              </div>
+            </div>
+          </div>
+        
+          <!-- Pregunta 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="bi bi-question-circle"></i>
+                ¿Qué opciones de pago aceptan?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <i class="bi bi-r-circle"></i>
+                Aceptamos diversas formas de pago, incluyendo tarjetas de crédito y débito, PayPal y transferencias bancarias. También ofrecemos opciones de pago a plazos en algunos casos.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Pregunta 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="bi bi-question-circle"></i>
+                ¿Puedo modificar o cancelar mi pedido después de realizarlo?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <i class="bi bi-r-circle"></i>
+                Si deseas modificar o cancelar tu pedido, por favor contáctanos lo antes posible. Las modificaciones o cancelaciones solo son posibles antes de que el pedido haya sido procesado para el envío.
+              </div>
+            </div>
+          </div>
+        
+          <!-- Pregunta 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="bi bi-question-circle"></i>
+                ¿Cuál es su política de devoluciones?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <i class="bi bi-r-circle"></i>
+                Ofrecemos una política de devoluciones de 30 días. Si no estás satisfecho con tu compra, puedes devolver los productos en su estado original para obtener un reembolso completo. Consulta nuestra política de devoluciones para más detalles.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Pregunta 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <i class="bi bi-question-circle"></i>
+                ¿Cómo puedo contactar con el servicio al cliente?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <i class="bi bi-r-circle"></i>
+                Puedes contactar con nuestro servicio al cliente a través del correo electrónico [email@example.com](mailto:email@example.com) o llamando al número de atención al cliente disponible en nuestra página de contacto.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Pregunta 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <i class="bi bi-question-circle"></i>
+                ¿Ofrecen envíos internacionales?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <i class="bi bi-r-circle"></i>
+                Sí, realizamos envíos internacionales a muchos países. Los costos y tiempos de envío varían según la ubicación. Consulta nuestra página de envío para obtener más información.
+              </div>
+            </div>
+          </div>
+        
+          <!-- Pregunta 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <i class="bi bi-question-circle"></i>
+                <i class="bi bi-question-circle"></i>
+                ¿Dónde puedo encontrar más información sobre los productos?
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <i class="bi bi-r-circle"></i>
+                Puedes encontrar más información sobre nuestros productos en sus respectivas páginas en el sitio web, donde ofrecemos detalles completos, especificaciones y opiniones de clientes. También puedes contactarnos si necesitas información adicional.
+              </div>
+            </div>
+          </div>
+        
+          <!-- Pregunta 8 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                <i class="bi bi-question-circle"></i>
+                ¿Cómo puedo suscribirme a su boletín de noticias?
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <i class="bi bi-r-circle"></i>
+                Puedes suscribirte a nuestro boletín de noticias a través del formulario de suscripción en la parte inferior de nuestra página principal. Simplemente ingresa tu correo electrónico y haz clic en "Suscribirse".
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+
+      <section>
+        <footer class="static-footer">
+          <div class="footer-container">
+            <div class="footer-logo">
+              <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+              <h3>Enlaces</h3>
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="footer-socials">
+              <h3>Redes Sociales</h3>
+              <a href="https://www.facebook.com/profile.php?id=61561973291067&mibextid=LQQJ4d" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 CHARLOTTE. Todos los derechos reservados.</p>
+          </div>
+        </footer>
+      </section>
+      
+  
+      <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <!--AOS-->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="js/app.js"></script>
+          <!-- All Js -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+          <script src="js/script.js"></script>
+  </body>
+  </html>
+  
